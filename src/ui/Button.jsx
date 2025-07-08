@@ -1,0 +1,1 @@
+export const Button = ({text}) => <button className="flex items-center p-5 bg-violet-600">{text} samolet</button>
