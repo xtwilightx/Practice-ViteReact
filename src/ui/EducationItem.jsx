@@ -1,5 +1,5 @@
 export const EducationItem = ({year, profession, place }) =>
-    <article className="flex justify-between">
+    <article className="flex gap-8">
         <div>
             <p>{year}</p>
         </div>

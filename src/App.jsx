@@ -80,14 +80,14 @@ function App() {
             <InterestItem className='pb-[25px]' icon={Photography} title={"Photography"} text={"Portraits"} />
           </section>
 
-          <section>
+          <section className=''>
 
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
-            <br /> <hr /> <br />
-            <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
-            <br /> <hr /> <br />
-            <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
-            <br /> <hr /> <br />
+            <br /> <hr className='text-[#E5E7EB]'/> <br />
+            <EducationItem className="" year={"2006 - 2007"} profession={"Junior Frontend developer"} place={"Facebook"} />
+            <br /> <hr className='text-[#E5E7EB]'/> <br />
+            <EducationItem className="" year={"2000 - 2005"} profession={"Frontend developer"} place={"Stanford University"} />
+            <br /> <hr className='text-[#E5E7EB]'/> <br />
             <Button text={"Get in touch"} />
           </section>
 
@@ -96,23 +96,23 @@ function App() {
         <div className='bg-[url(src/assets/images/unsplash.png)] px-4 bg-center'>123ssssssss
 
 
-        <div className="">
-          <form className="bg-white shadow-md rounded-3xl">
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name_surname">
-                Your full name <span className='text-red-500'>*</span>
-              </label>
-              <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
-            </div>
-            <div className="mb-6">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                Your email <span className='text-red-500'>*</span>
-              </label>
-              <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="******************" />
-              <p className="text-red-500 text-xs italic">Please choose a password.</p>
-            </div>
-            <Button />
-          </form>
+          <div className="">
+            <form className="bg-white shadow-md rounded-3xl">
+              <div className="mb-4">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name_surname">
+                  Your full name <span className='text-red-500'>*</span>
+                </label>
+                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
+              </div>
+              <div className="mb-6">
+                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                  Your email <span className='text-red-500'>*</span>
+                </label>
+                <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="******************" />
+                <p className="text-red-500 text-xs italic">Please choose a password.</p>
+              </div>
+              <Button />
+            </form>
           </div>
           <p className="text-center text-gray-500 text-xs">
             © 2022 JetRuby. All Rights Reserved
