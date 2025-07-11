@@ -5,6 +5,7 @@ import './App.css'
 import Logo from './assets/icons/Logo.svg';
 import BurgerMenu from './assets/icons/BurgerMenu.svg';
 import Plane from './assets/icons/Plane.svg';
+import User from './assets/icons/User.svg';
 
 import manLookingAtTheCamera from './assets/images/man-looking-at-camera.png';
 import bgForManLookingAtTheCamera from './assets/images/bg.jpg';
@@ -66,7 +67,7 @@ function App() {
           </div>
         </div>
 
-        <div className='flex-col'>
+        <div className='flex flex-col'>
 
           <section>
             <h2 className="mb-[36px] text-[24px] font-semibold text-[#27272A]">About me</h2>
@@ -98,11 +99,12 @@ function App() {
 
         </div>
         </div>
-        <div className='bg-[url(src/assets/images/unsplash.png)] px-4 bg-center'>123ssssssss
+        <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center'>
 
 
           <div className="">
-            <form className="bg-white shadow-md rounded-3xl">
+            <form className="bg-white shadow-md rounded-[16px] ">
+              <span className='pl-3 text-center font-semibold text-[20px]'>Let’s discuss your project</span>
               <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
                   Your full name <span className='text-red-500'>*</span>
