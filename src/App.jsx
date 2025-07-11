@@ -26,7 +26,7 @@ function App() {
     <div className='font-[Montserrat]'>
       <header>
         <div className=''></div>
-        <div className="mb-[83px] flex items-center justify-between w-full h-[64px] bg-[#FCFBFA]">
+        <div className="border-[#E5E7EB] border-b-1 mb-[27px] flex items-center justify-between w-full h-[64px]">
           <div className='flex'>
             <img className='pl-[16px]' src={Logo} alt="React Logo" /></div>
 
@@ -37,17 +37,21 @@ function App() {
             <a className='flex-initial'>Get in touch</a>
 
           </div>
-          <div className=' sm:hidden'><img src={burgerIcon} /></div>
+          <div className='pr-[14.8px] sm:hidden'><img src={burgerIcon} /></div>
         </div>
 
       </header>
 
-      <main className='pl-[15px]'>
-        <div className='mb-[48px] relative w-full h-[300px] overflow-hidden'>
+      <main>
+  <div className='pl-[16px]'>
+        <div className='mb-[48px] relative w-full h-[440px] overflow-hidden'>
           <div className="flex flex-col gap-3 w-2/3">
-            <h2 className="text-[24px] font-bold">Hey, I’m Nick</h2>
-            <div className='text-[14px] font-normal w-full text-[#696969]'>Frontend developer Help you to create high-quality digital products that your clients will love and let your business thrive
-            </div>
+            <span className="text-[24px] font-bold">Hey, I’m Nick</span>
+            <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px]'>Frontend developer
+            </span>
+            <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
+            <span className='text-[14px] font-normal w-full text-[#696969]'>Help you to create high-quality digital products that your clients will love and let your business thrive
+            </span>
             <div>
               <Button text={"Get in touch"} />
             </div>
@@ -66,9 +70,9 @@ function App() {
 
           <section>
             <h2 className="mb-[36px] text-[24px] font-bold">About me</h2>
-            <img className='mb-[36px] w-[364px] h-[364px] rounded-full object-cover' src={ManInCircle} />
+            <img className='mb-[36px] size-[326px] rounded-full object-cover' src={ManInCircle} />
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
-            <p className='mb-[48px]'><b>Nick Richardson</b> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations </p>
+            <p className='mb-[48px] text-[14px]'><b>Nick Richardson</b> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations </p>
           </section>
 
           <section className='flex flex-col'>
@@ -117,6 +121,7 @@ function App() {
           <p className="text-center text-gray-500 text-xs">
             © 2022 JetRuby. All Rights Reserved
           </p>
+        </div>
         </div>
       </main>
     </div>
