@@ -4,7 +4,7 @@ export const EducationItem = ({year, profession, place }) =>
             <p>{year}</p>
         </div>
         <div className="flex flex-col">
-            <p>{profession}</p>
+            <p><b>{profession}</b></p>
             <p>{place}</p>
         </div>
     </article>

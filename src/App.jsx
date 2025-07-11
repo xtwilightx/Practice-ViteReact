@@ -69,14 +69,14 @@ function App() {
         <div className='flex-col'>
 
           <section>
-            <h2 className="mb-[36px] text-[24px] font-bold">About me</h2>
-            <img className='mb-[36px] size-[326px] rounded-full object-cover' src={ManInCircle} />
+            <h2 className="mb-[36px] text-[24px] font-semibold text-[#27272A]">About me</h2>
+            <img className='mb-[36px] size-[350px] rounded-full object-cover' src={ManInCircle} />
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
-            <p className='mb-[48px] text-[14px]'><b>Nick Richardson</b> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations </p>
+            <p className='mb-[48px] text-[14px] font-normal text-[#696969]'><span className='text-[14px] font-semibold text-[#000000] '>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
           </section>
 
           <section className='flex flex-col'>
-            <article className='mb-[29px] text-[29px] fint-'>
+            <article className='mb-[29px] text-[29px] font-semibold text-[#27272A]'>
               Interests
             </article>
             <InterestItem className='pb-[25px]' icon={Music} title={"Music"} text={"Indie rock | Reggae"} />
@@ -85,25 +85,26 @@ function App() {
           </section>
 
           <section className=''>
-
+          <div className='mb-[100px]'>
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
             <br /> <hr className='text-[#E5E7EB]'/> <br />
             <EducationItem className="" year={"2006 - 2007"} profession={"Junior Frontend developer"} place={"Facebook"} />
             <br /> <hr className='text-[#E5E7EB]'/> <br />
             <EducationItem className="" year={"2000 - 2005"} profession={"Frontend developer"} place={"Stanford University"} />
-            <br /> <hr className='text-[#E5E7EB]'/> <br />
+            <br /> <hr className='text-[#E5E7EB] mb-[57px]'/>
             <Button text={"Get in touch"} />
+            </div>
           </section>
 
         </div>
-
+        </div>
         <div className='bg-[url(src/assets/images/unsplash.png)] px-4 bg-center'>123ssssssss
 
 
           <div className="">
             <form className="bg-white shadow-md rounded-3xl">
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name_surname">
+                <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
                   Your full name <span className='text-red-500'>*</span>
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
@@ -122,7 +123,7 @@ function App() {
             © 2022 JetRuby. All Rights Reserved
           </p>
         </div>
-        </div>
+
       </main>
     </div>
   )
