@@ -6,6 +6,7 @@ import Logo from './assets/icons/Logo.svg';
 import BurgerMenu from './assets/icons/BurgerMenu.svg';
 import Plane from './assets/icons/Plane.svg';
 import User from './assets/icons/User.svg';
+import Exclamation from './assets/icons/Exclamation.svg'
 
 import manLookingAtTheCamera from './assets/images/man-looking-at-camera.png';
 import bgForManLookingAtTheCamera from './assets/images/bg.jpg';
@@ -100,36 +101,53 @@ function App() {
 
         </div>
         </div>
-        <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center'>
+        <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center pb-14'>
 
 
             <form className="pt-[48px] flex flex-col gap-1 bg-white shadow-md rounded-[16px]">
+              <div className='pl-[30px]'>
               <span className='text-center font-semibold text-[20px] text-[#27272A]'>Let’s discuss your project</span>
               <div className='flex flex-col'>
               <div className="mb-4 mt-[48px]">
                 <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
                   Your full name <span className='text-red-500'>*</span>
                 </label>
-                <div className='relative'>
-                <img className='absolute py-1.5 pt-[-2000px]' src={User}></img>
-                <input className="shadow appearance-none border border-[#E5E7EB] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
+                <div className='flex items-center'>
+                <img className='absolute px-4' src={User}></img>
+                <input className="py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
                 </div>
               </div>
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                  Your email <span className='text-red-500'>*</span>
+                  Your email <span className='text-[#E02424]'>*</span>
                 </label>
-                <input className="shadow appearance-none border border-[#E5E7EB] rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="name@example.com" />
-                <p className="text-red-500 text-xs italic">Please choose a password.</p>
+                <div className='flex items-center'>
+                <img className='absolute py-2 px-4' src={Exclamation}></img>
+                <input className="py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="name@example.com" />
+                </div>
+                <p className="text-red-500 text-[12px] font-[Inter] font-semibold">Please fill this mandatory field</p>
               </div>
               </div>
-              <Button />
+              <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
+                Tell me about your project
+              </label>
+              <div className=''>
+                <textarea className="py-4 mb-[45px] pl-4 pr-19 shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Add here a general description of your idea and target aim" />
+              </div>
+              
+              <div className='mb-[48px]'>
+              <Button text={"Get in touch"} />
+              </div>
+              </div>
             </form>
-          <p className="text-center text-gray-500 text-xs">
+
+        </div>
+        
+        <div className='mt-10 mb-10'>
+        <p className="text-center text-gray-500 text-xs">
             © 2022 JetRuby. All Rights Reserved
           </p>
-        </div>
-
+          </div>
       </main>
     </div>
   )
