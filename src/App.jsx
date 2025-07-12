@@ -76,8 +76,8 @@ function App() {
             <p className='mb-[48px] text-[14px] font-normal text-[#696969]'><span className='text-[14px] font-semibold text-[#000000] '>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
           </section>
 
-          <section className='flex flex-col'>
-            <article className='mb-[29px] text-[29px] font-semibold text-[#27272A]'>
+          <section className='flex flex-col mb-[49px]'>
+            <article className='mb-[29px] text-[20px] font-semibold text-[#27272A]'>
               Interests
             </article>
             <InterestItem className='pb-[25px]' icon={Music} title={"Music"} text={"Indie rock | Reggae"} />
@@ -87,6 +87,7 @@ function App() {
 
           <section className=''>
           <div className='mb-[100px]'>
+            <div className="text-[20px] mb-[28px] font-semibold text-[#27272A]">Education & Experience</div>
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
             <br /> <hr className='text-[#E5E7EB]'/> <br />
             <EducationItem className="" year={"2006 - 2007"} profession={"Junior Frontend developer"} place={"Facebook"} />
@@ -102,25 +103,28 @@ function App() {
         <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center'>
 
 
-          <div className="">
-            <form className="bg-white shadow-md rounded-[16px] ">
-              <span className='pl-3 text-center font-semibold text-[20px]'>Let’s discuss your project</span>
-              <div className="mb-4">
+            <form className="pt-[48px] flex flex-col gap-1 bg-white shadow-md rounded-[16px]">
+              <span className='text-center font-semibold text-[20px] text-[#27272A]'>Let’s discuss your project</span>
+              <div className='flex flex-col'>
+              <div className="mb-4 mt-[48px]">
                 <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
                   Your full name <span className='text-red-500'>*</span>
                 </label>
-                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
+                <div className='relative'>
+                <img className='absolute py-1.5 pt-[-2000px]' src={User}></img>
+                <input className="shadow appearance-none border border-[#E5E7EB] rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
+                </div>
               </div>
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
                   Your email <span className='text-red-500'>*</span>
                 </label>
-                <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="******************" />
+                <input className="shadow appearance-none border border-[#E5E7EB] rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="name@example.com" />
                 <p className="text-red-500 text-xs italic">Please choose a password.</p>
+              </div>
               </div>
               <Button />
             </form>
-          </div>
           <p className="text-center text-gray-500 text-xs">
             © 2022 JetRuby. All Rights Reserved
           </p>
