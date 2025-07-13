@@ -11,6 +11,7 @@ import Exclamation from './assets/icons/Exclamation.svg'
 import manLookingAtTheCamera from './assets/images/man-looking-at-camera.png';
 import bgForManLookingAtTheCamera from './assets/images/bg.jpg';
 import bgMobile from './assets/images/bgMobile.png';
+import bgTablet from './assets/images/bgTablet.png';
 import ManInCircle from './assets/images/ManInCircle.png';
 import { Button } from './ui/Button';
 import Music from './assets/icons/Music.svg'
@@ -32,9 +33,9 @@ function App() {
           <div className='flex'>
             <img className='pl-[16px]' src={Logo} alt="React Logo" /></div>
 
-          <div className='flex-col hidden sm:block'>
+          <div className='text-[#696969] font-semibold flex-row gap-3 hidden sm:flex sm:pr-5'>
 
-            <a className='flex-initial'>Main</a>
+            <a className='text-[#7E3AF2] flex-initial'>Main</a>
             <a className='flex-initial'>About</a>
             <a className='flex-initial'>Get in touch</a>
 
@@ -46,13 +47,13 @@ function App() {
 
       <main>
   <div className='pl-[16px]'>
-        <div className='mb-[48px] relative w-full h-[440px] overflow-hidden'>
+        <div className='mb-[48px] relative w-full h-[440px]'>
           <div className="flex flex-col gap-3 w-2/3">
-            <h3 className="text-[24px] font-bold">Hey, I’m Nick</h3>
-            <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px]'>Frontend developer
+            <h3 className="text-[24px] font-bold text-[#27272A] sm:text-[60px]">Hey, I’m Nick</h3>
+            <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] sm:text-[20px]'>Frontend developer
             </span>
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
-            <span className='text-[14px] font-normal w-full text-[#696969]'>Help you to create high-quality digital products that your clients will love and let your business thrive
+            <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-[20px]'>Help you to create high-quality digital products that your clients will love and let your business thrive
             </span>
             <div>
               <Button text={"Get in touch"} />
@@ -60,8 +61,9 @@ function App() {
           </div>
 
 
-          <div className='-z-10 absolute right-0 bottom-0'>
+          <div className='-z-10 absolute right-0 bottom-0 sm:bottom-21'>
             <img className='rounded-l-4xl sm:hidden' src={bgMobile} />
+            <img className='rounded-l-4xl hidden sm:block sm:h-[360px]' src={bgTablet} />
           </div>
         </div>
 
