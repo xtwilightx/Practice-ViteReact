@@ -1,10 +1,11 @@
-export const EducationItem = ({year, profession, place }) =>
+export const EducationItem = ({ year, profession, place }) => (
     <article className="flex gap-8">
-        <div>
-            <p>{year}</p>
-        </div>
-        <div className="flex flex-col">
-            <p><b>{profession}</b></p>
-            <p>{place}</p>
-        </div>
+      <div className="w-1/4">
+        <p className="text-gray-500">{year}</p>
+      </div>
+      <div className="flex-1"> 
+        <p className="font-semibold text-[#27272A]">{profession}</p>
+        <p className="text-gray-500 mt-1">{place}</p>
+      </div>
     </article>
+  )

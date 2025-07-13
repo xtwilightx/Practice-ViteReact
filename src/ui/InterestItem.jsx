@@ -5,7 +5,7 @@ export const InterestItem = ({ icon, title, text }) =>
             <img src={Ellipse
 
             } />
-            <img className='absolute inset-0 translate-3' src={icon} />
+            <img className='absolute top-6/13 left-1/2 transform -translate-x-1/2 -translate-y-1/2' src={icon} />
         </div>
         <div className="flex flex-col">
             <p>{title}</p>

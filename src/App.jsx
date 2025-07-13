@@ -48,7 +48,7 @@ function App() {
   <div className='pl-[16px]'>
         <div className='mb-[48px] relative w-full h-[440px] overflow-hidden'>
           <div className="flex flex-col gap-3 w-2/3">
-            <span className="text-[24px] font-bold">Hey, I’m Nick</span>
+            <h3 className="text-[24px] font-bold">Hey, I’m Nick</h3>
             <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px]'>Frontend developer
             </span>
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
@@ -61,10 +61,7 @@ function App() {
 
 
           <div className='-z-10 absolute right-0 bottom-0'>
-            <img className='rounded-4xl sm:hidden' src={bgMobile} />
-            {/* <div className='absolute left-0 bottom-0'>
-            <img className='' src={manLookingAtTheCamera} />
-          </div> */}
+            <img className='rounded-l-4xl sm:hidden' src={bgMobile} />
           </div>
         </div>
 
@@ -72,7 +69,7 @@ function App() {
 
           <section>
             <h2 className="mb-[36px] text-[24px] font-semibold text-[#27272A]">About me</h2>
-            <img className='mb-[36px] size-[350px] rounded-full object-cover' src={ManInCircle} />
+            <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover' src={ManInCircle} />
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
             <p className='mb-[48px] text-[14px] font-normal text-[#696969]'><span className='text-[14px] font-semibold text-[#000000] '>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
           </section>
@@ -86,7 +83,7 @@ function App() {
             <InterestItem className='pb-[25px]' icon={Photography} title={"Photography"} text={"Portraits"} />
           </section>
 
-          <section className=''>
+          <section>
           <div className='mb-[100px]'>
             <div className="text-[20px] mb-[28px] font-semibold text-[#27272A]">Education & Experience</div>
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
@@ -104,17 +101,22 @@ function App() {
         <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center pb-14'>
 
 
-            <form className="pt-[48px] flex flex-col gap-1 bg-white shadow-md rounded-[16px]">
-              <div className='pl-[30px]'>
-              <span className='text-center font-semibold text-[20px] text-[#27272A]'>Let’s discuss your project</span>
+            <form className="pt-[48px] flex flex-col flex-wrap gap-1 bg-white shadow-md rounded-[16px]">
+              <div className='px-[30px]'>
+              <span className='text-center font-semibold text-[20px] text-[#27272A]'>
+                Let’s discuss your project
+                </span>
+
+
               <div className='flex flex-col'>
               <div className="mb-4 mt-[48px]">
                 <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
                   Your full name <span className='text-red-500'>*</span>
                 </label>
+              
                 <div className='flex items-center'>
                 <img className='absolute px-4' src={User}></img>
-                <input className="py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
+                <input className="w-full py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
                 </div>
               </div>
               <div className="mb-6">
@@ -123,7 +125,7 @@ function App() {
                 </label>
                 <div className='flex items-center'>
                 <img className='absolute py-2 px-4' src={Exclamation}></img>
-                <input className="py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="name@example.com" />
+                <input className="w-full py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="name@example.com" />
                 </div>
                 <p className="text-red-500 text-[12px] font-[Inter] font-semibold">Please fill this mandatory field</p>
               </div>
@@ -132,7 +134,7 @@ function App() {
                 Tell me about your project
               </label>
               <div className=''>
-                <textarea className="py-4 mb-[45px] pl-4 pr-19 shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Add here a general description of your idea and target aim" />
+                <textarea className="w-full py-6 mb-[45px]  w-72 pl-4 shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Add here a general description of your idea and target aim" />
               </div>
               
               <div className='mb-[48px]'>
@@ -148,7 +150,7 @@ function App() {
             © 2022 JetRuby. All Rights Reserved
           </p>
           </div>
-      </main>
+      </main>      
     </div>
   )
 }
