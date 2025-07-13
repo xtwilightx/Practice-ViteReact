@@ -23,8 +23,6 @@ import { InterestItem } from './ui/InterestItem';
 import { EducationItem } from './ui/EducationItem';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='font-[Montserrat]'>
       <header>
@@ -46,14 +44,15 @@ function App() {
       </header>
 
       <main>
-  <div className='pl-4 sm:pl-10'>
+  <div className='pl-4 sm:pl-10 lg:pl-20'>
         <div className='mb-[48px] relative w-full h-[440px]'>
           <div className="flex flex-col gap-3 w-2/3">
-            <h3 className="text-[24px] font-bold text-[#27272A] sm:text-[60px]">Hey, I’m Nick</h3>
-            <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] sm:text-[20px]'>Frontend developer
+            <h1 className="text-[24px] font-bold text-[#27272A] sm:text-6xl lg:text-6xl">Hey, I’m Nick</h1>
+            <h3 className="text-2xl font-bold text-[#27272A] sm:hidden">Hey, I’m Nick</h3>
+            <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] sm:text-2xl'>Frontend developer
             </span>
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
-            <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-[20px]'>Help you to create high-quality digital products that your clients will love and let your business thrive
+            <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-2xl'>Help you to create high-quality digital products that your clients will love and let your business thrive
             </span>
             <div>
               <Button text={"Get in touch"} />
@@ -69,23 +68,23 @@ function App() {
 
 
           <section>
-          <div className='sm:flex flex-none flex-row gap-11'>
-            <div>
-            <h2 className="mb-[36px] text-[24px] font-semibold text-[#27272A]">About me</h2>
-            <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover sm:w-72' src={ManInCircle} />
+          <div className='sm:flex flex-row gap-11'>
+            <div className='sm:w-[calc(50%-1.5rem)]'>
+            <h2 className="mb-[36px] text-2xl sm:text-3xl sm:font-bold font-semibold text-[#27272A]">About me</h2>
+            <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover' src={ManInCircle} />
             </div>
             
-            <div>
+            <div className=''>
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
-            <p className='mb-[48px] text-[14px] font-normal text-[#696969]'><span className='text-[14px] font-semibold text-[#000000] '>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
+            <p className='mb-[48px] text-[14px] sm:text-2xl font-normal text-[#696969]'><span className='font-semibold text-[#000000]'>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
               {/* <Button text={"Get in touch"} /> */}
             </div>
             </div>
           </section>
 
-        <div className='flex flex-col'>
-          <section className='flex flex-col mb-[49px]'>
-            <article className='mb-[29px] text-[20px] font-semibold text-[#27272A]'>
+        <div className='flex flex-col justify-between sm:flex-row'>
+          <section className='flex flex-col mb-12'>
+            <article className='mb-[29px] text-[20px] sm:text-2xl font-semibold text-[#27272A]'>
               Interests
             </article>
             <InterestItem className='pb-[25px]' icon={Music} title={"Music"} text={"Indie rock | Reggae"} />
@@ -95,7 +94,7 @@ function App() {
 
           <section>
           <div className='mb-[100px]'>
-            <div className="text-[20px] mb-[28px] font-semibold text-[#27272A]">Education & Experience</div>
+            <div className="text-[20px] sm:text-2xl mb-7 font-semibold text-[#27272A]">Education & Experience</div>
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
             <br /> <hr className='text-[#E5E7EB]'/> <br />
             <EducationItem className="" year={"2006 - 2007"} profession={"Junior Frontend developer"} place={"Facebook"} />
