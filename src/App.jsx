@@ -47,7 +47,7 @@ function App() {
   <div className='pl-4 sm:pl-10 lg:pl-20'>
         <div className='mb-[48px] relative w-full h-[440px]'>
           <div className="flex flex-col gap-3 w-2/3">
-            <h1 className="text-[24px] font-bold text-[#27272A] sm:text-6xl lg:text-6xl">Hey, I’m Nick</h1>
+            <h1 className="text-[24px] font-bold text-[#27272A] hidden sm:block sm:text-6xl lg:text-6xl">Hey, I’m Nick</h1>
             <h3 className="text-2xl font-bold text-[#27272A] sm:hidden">Hey, I’m Nick</h3>
             <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] sm:text-2xl'>Frontend developer
             </span>
@@ -69,7 +69,7 @@ function App() {
 
           <section>
           <div className='sm:flex flex-row gap-11'>
-            <div className='sm:w-[calc(50%-1.5rem)]'>
+            <div className='sm:w-[calc(40%-1.5rem)]'>
             <h2 className="mb-[36px] text-2xl sm:text-3xl sm:font-bold font-semibold text-[#27272A]">About me</h2>
             <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover' src={ManInCircle} />
             </div>
@@ -82,7 +82,7 @@ function App() {
             </div>
           </section>
 
-        <div className='flex flex-col justify-between sm:flex-row'>
+        <div className='flex flex-col sm:pr-48 justify-between sm:flex-row'>
           <section className='flex flex-col mb-12'>
             <article className='mb-[29px] text-[20px] sm:text-2xl font-semibold text-[#27272A]'>
               Interests
