@@ -46,7 +46,7 @@ function App() {
       </header>
 
       <main>
-  <div className='pl-[16px]'>
+  <div className='pl-4 sm:pl-10'>
         <div className='mb-[48px] relative w-full h-[440px]'>
           <div className="flex flex-col gap-3 w-2/3">
             <h3 className="text-[24px] font-bold text-[#27272A] sm:text-[60px]">Hey, I’m Nick</h3>
@@ -67,15 +67,23 @@ function App() {
           </div>
         </div>
 
-        <div className='flex flex-col'>
 
           <section>
+          <div className='sm:flex flex-none flex-row gap-11'>
+            <div>
             <h2 className="mb-[36px] text-[24px] font-semibold text-[#27272A]">About me</h2>
-            <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover' src={ManInCircle} />
+            <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover sm:w-72' src={ManInCircle} />
+            </div>
+            
+            <div>
             <hr className='mb-[24px] w-9 border-2 text-[#7E3AF2]'></hr>
             <p className='mb-[48px] text-[14px] font-normal text-[#696969]'><span className='text-[14px] font-semibold text-[#000000] '>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
+              {/* <Button text={"Get in touch"} /> */}
+            </div>
+            </div>
           </section>
 
+        <div className='flex flex-col'>
           <section className='flex flex-col mb-[49px]'>
             <article className='mb-[29px] text-[20px] font-semibold text-[#27272A]'>
               Interests
@@ -97,55 +105,73 @@ function App() {
             <Button text={"Get in touch"} />
             </div>
           </section>
+          </div>
 
-        </div>
         </div>
         <div className='bg-[url(src/assets/images/unsplash.png)] pt-[64px] px-4 bg-center pb-14'>
+ 
+  <form className="pt-[48px] bg-white shadow-md rounded-[16px] max-w-4xl mx-auto">
+    <div className='px-8'>
+      <h2 className='text-center font-semibold text-[20px] text-[#27272A] mb-8'>
+        Let’s discuss your project
+      </h2>
 
+      <div className='flex flex-col sm:flex-row sm:gap-8'>
 
-            <form className="pt-[48px] flex flex-col flex-wrap gap-1 bg-white shadow-md rounded-[16px]">
-              <div className='px-[30px]'>
-              <span className='text-center font-semibold text-[20px] text-[#27272A]'>
-                Let’s discuss your project
-                </span>
-
-
-              <div className='flex flex-col'>
-              <div className="mb-4 mt-[48px]">
-                <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
-                  Your full name <span className='text-red-500'>*</span>
-                </label>
-              
-                <div className='flex items-center'>
-                <img className='absolute px-4' src={User}></img>
-                <input className="w-full py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username" />
-                </div>
-              </div>
-              <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                  Your email <span className='text-[#E02424]'>*</span>
-                </label>
-                <div className='flex items-center'>
-                <img className='absolute py-2 px-4' src={Exclamation}></img>
-                <input className="w-full py-4 px-11  shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="name@example.com" />
-                </div>
-                <p className="text-red-500 text-[12px] font-[Inter] font-semibold">Please fill this mandatory field</p>
-              </div>
-              </div>
-              <label className="block text-gray-700 text-sm font-bold mb-2 radius-16" htmlFor="name_surname">
-                Tell me about your project
-              </label>
-              <div className=''>
-                <textarea className="w-full py-6 mb-[45px]  w-72 pl-4 shadow appearance-none border border-[#E5E7EB] rounded-2xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Add here a general description of your idea and target aim" />
-              </div>
-              
-              <div className='mb-[48px]'>
-              <Button text={"Get in touch"} />
-              </div>
-              </div>
-            </form>
-
+        <div className="mb-6 flex-1">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            Your full name <span className='text-red-500'>*</span>
+          </label>
+          <div className='relative'>
+            <img className='absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5' src={User} alt="User icon" />
+            <input 
+              className="w-full py-4 pl-11 pr-4 border border-[#E5E7EB] rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500" 
+              id="name" 
+              type="text" 
+              placeholder="Username" 
+            />
+          </div>
         </div>
+
+
+        <div className="mb-6 flex-1">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            Your email <span className='text-[#E02424]'>*</span>
+          </label>
+          <div className='relative'>
+            <img className='absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5' src={Exclamation} alt="Warning icon" />
+            <input 
+              className="w-full py-4 pl-11 pr-4 border border-[#E5E7EB] rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500" 
+              id="email" 
+              type="email" 
+              placeholder="name@example.com" 
+            />
+          </div>
+          <p className="text-red-500 text-xs mt-1 font-semibold">
+            Please fill this mandatory field
+          </p>
+        </div>
+      </div>
+
+
+      <div className="mb-6">
+        <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="project">
+          Tell me about your project
+        </label>
+        <textarea 
+          className="w-full min-h-[150px] py-4 px-4 border border-[#E5E7EB] rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          id="project" 
+          placeholder="Add here a general description of your idea and target aim" 
+        />
+      </div>
+
+
+      <div className='mb-[48px]'>
+        <Button text="Get in touch" className="w-full" />
+      </div>
+    </div>
+  </form>
+</div>
         
         <div className='mt-10 mb-10'>
         <p className="text-center text-gray-500 text-xs">
