@@ -41,12 +41,12 @@ function App() {
             <div className="flex flex-col gap-3 w-full sm:w-2/3">
               <h1 className="text-[24px] font-bold text-[#27272A] hidden sm:block sm:text-6xl lg:text-6xl">Hey, I’m Nick</h1>
               <h3 className="text-2xl font-bold text-[#27272A] sm:hidden">Hey, I’m Nick</h3>
-              <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] lg:mb-[92px] sm:text-2xl'>Frontend developer
+              <span className='text-[15px] font-normal w-full text-[#696969] mb-[24px] lg:mb-[92px] sm:text-2xl'>Frontend developer
               </span>
               <hr className='mb-[24px] w-[25px] border-2 text-[#7E3AF2]'></hr>
               <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-2xl pr-[130px] sm:pr-[230px] lg:pr-[237px]'>Help you to create high-quality digital products that your clients will love and let your business thrive
               </span>
-              <div>
+              <div className='mb-4'>
                 <Button text={"Get in touch"} />
               </div>
             </div>
