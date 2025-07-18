@@ -1,7 +1,7 @@
 import Ellipse from '../assets/icons/Ellipse.svg';
 
 export const InterestItem = ({ icon, title, text }) => (
-  <article className="flex gap-4 items-start pb-[25px]">
+  <article className="flex gap-4 items-start pb-[25px] sm:pb-[44px] lg:pb-[48px]">
 
     <div className="relative flex-shrink-0">
       <img 

@@ -1,23 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Logo from './assets/icons/Logo.svg';
-import BurgerMenu from './assets/icons/BurgerMenu.svg';
-import Plane from './assets/icons/Plane.svg';
 import User from './assets/icons/User.svg';
 import Exclamation from './assets/icons/Exclamation.svg'
-
-import manLookingAtTheCamera from './assets/images/man-looking-at-camera.png';
-import bgForManLookingAtTheCamera from './assets/images/bg.jpg';
 import bgMobile from './assets/images/bgMobile.png';
 import bgTablet from './assets/images/bgTablet.png';
+import bgPC from './assets/images/bgPC.png';
 import ManInCircle from './assets/images/ManInCircle.png';
 import { Button } from './ui/Button';
 import Music from './assets/icons/Music.svg'
 import Art from './assets/icons/Art.svg'
 import Photography from './assets/icons/Photography.svg'
-import formBG from './assets/images/formBG.svg'
 import burgerIcon from './assets/icons/BurgerMenu.svg'
 import { InterestItem } from './ui/InterestItem';
 import { EducationItem } from './ui/EducationItem';
@@ -27,7 +19,7 @@ function App() {
     <div className='font-[Montserrat]'>
       <header>
         <div className=''></div>
-        <div className="border-[#E5E7EB] border-b-1 mb-[27px] sm:mb-11 flex items-center justify-between w-full h-[64px]">
+        <div className="border-[#E5E7EB] border-b-1 mb-[27px] sm:mb-11 lg:mb-[172px] flex items-center justify-between w-full h-[64px]">
           <div className='flex'>
             <img className='pl-[16px]' src={Logo} alt="React Logo" /></div>
 
@@ -45,14 +37,14 @@ function App() {
 
       <main>
         <div className='pl-4 sm:pl-10 lg:pl-20'>
-          <div className='mb-[113px] sm:mb-[440px] relative w-full h-[440px]'>
+          <div className='mb-[113px] sm:mb-[130px] lg:mb-[350px] relative w-full h-[440px]'>
             <div className="flex flex-col gap-3 w-full sm:w-2/3">
               <h1 className="text-[24px] font-bold text-[#27272A] hidden sm:block sm:text-6xl lg:text-6xl">Hey, I’m Nick</h1>
               <h3 className="text-2xl font-bold text-[#27272A] sm:hidden">Hey, I’m Nick</h3>
-              <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] sm:text-2xl'>Frontend developer
+              <span className='text-[14px] font-normal w-full text-[#696969] mb-[24px] lg:mb-[92px] sm:text-2xl'>Frontend developer
               </span>
               <hr className='mb-[24px] w-[25px] border-2 text-[#7E3AF2]'></hr>
-              <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-2xl pr-[130px]'>Help you to create high-quality digital products that your clients will love and let your business thrive
+              <span className='mb-[24px] text-[14px] font-normal w-full text-[#696969] sm:text-2xl pr-[130px] sm:pr-[230px] lg:pr-[237px]'>Help you to create high-quality digital products that your clients will love and let your business thrive
               </span>
               <div>
                 <Button text={"Get in touch"} />
@@ -60,41 +52,41 @@ function App() {
             </div>
 
 
-            <div className='-z-10 absolute right-0 top-[207px] sm:top-[0px]'>
+            <div className='-z-10 absolute right-0 top-[207px] sm:top-[0px] lg:top-[-130px]'>
               <img className='rounded-l-4xl max-h-80 sm:max-h-none sm:hidden' src={bgMobile} />
-              <img className='rounded-l-4xl hidden sm:block sm:w-[650px]' src={bgTablet} />
+              <img className='rounded-l-4xl hidden sm:block sm:w-[650px] lg:hidden' src={bgTablet} />
+              <img className='rounded-l-4xl hidden lg:w-[1070px] lg:block' src={bgPC} />
             </div>
           </div>
 
 
           <section className=''>
-            <div className='sm:flex flex-row gap-11'>
-              <div className='sm:w-[calc(40%-1.5rem)]'>
-              <h2 className="mb-[36px] text-2xl sm:text-3xl sm:font-bold font-semibold text-[#27272A]">About me</h2>
-              <img className='pl-0 mb-[36px] w-full px-4 rounded-full object-cover' src={ManInCircle} />
+            <div className='sm:flex flex-row gap-11 items-center'>
+              <div className='sm:w-5/6'>
+              <h2 className="mb-[36px] sm:pb-[50px] text-2xl sm:text-3xl sm:font-bold font-semibold text-[#27272A]">About me</h2>
+              <img className='pl-0 mb-[36px] sm:mb-[64px] w-full sm:w-4/5 px-4 rounded-full object-cover' src={ManInCircle} />
             </div>
             
             <div className=''>
             <hr className='mb-[24px] w-[25px] border-2 text-[#7E3AF2]'></hr>
-              <p className='mb-[48px] text-[14px] sm:text-2xl font-normal text-[#696969]'><span className='font-semibold text-[#000000]'>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion.<br /> Solving issues through negotiations </p>
-              {/* <Button text={"Get in touch"} /> */}
+              <p className='mb-[48px] text-[14px] sm:text-2xl font-normal text-[#696969] pr-[88px]'><span className='font-semibold text-[#000000]'>Nick Richardson</span> - specialist in Frontend development. Clear code is my passion. Solving issues through negotiations </p>
             </div>
             </div>
           </section>
 
-        <div className='flex flex-col sm:pr-48 justify-between lg:flex-row'>
+        <div className='sm:mb-[64px] flex flex-col sm:pr-48 justify-between lg:flex-row lg:gap-28'>
           <section className='flex flex-col mb-12'>
             <article className='mb-[29px] text-[20px] sm:text-2xl font-semibold text-[#27272A]'>
               Interests
             </article>
-            <InterestItem className='pb-[25px]' icon={Music} title={"Music"} text={"Indie rock | Reggae"} />
-            <InterestItem className='pb-[25px]' icon={Art} title={"Art"} text={"Edvard Munch | Frida Kahlo"} />
-            <InterestItem className='pb-[25px]' icon={Photography} title={"Photography"} text={"Portraits"} />
+            <InterestItem icon={Music} title={"Music"} text={"Indie rock | Reggae"} />
+            <InterestItem icon={Art} title={"Art"} text={"Edvard Munch | Frida Kahlo"} />
+            <InterestItem icon={Photography} title={"Photography"} text={"Portraits"} />
           </section>
 
           <section>
           <div className='mb-[100px]'>
-            <div className="text-[20px] sm:text-2xl mb-7 font-semibold text-[#27272A]">Education & Experience</div>
+            <div className="text-[20px] w-full sm:text-2xl mb-7 sm:mb-[44px] font-semibold text-[#27272A]">Education & Experience</div>
             <EducationItem className="" year={"2008 - Present"} profession={"Middle Frontend developer"} place={"Ozon"} />
             <br /> <hr className='text-[#E5E7EB]'/> <br />
             <EducationItem className="" year={"2006 - 2007"} profession={"Junior Frontend developer"} place={"Facebook"} />
@@ -165,15 +157,15 @@ function App() {
       </div>
 
 
-      <div className='mb-[48px]'>
-        <Button text="Get in touch" className="w-full" />
+      <div className='sm:pb-[48px]'>
+        <Button text="Submit" className="w-full" />
       </div>
     </div>
   </form>
 </div>
         
         <div className='mt-10 mb-10'>
-        <p className="text-center text-gray-500 text-xs">
+        <p className="text-center sm:text-left sm:pl-[85px] text-gray-500 text-xs">
             © 2022 JetRuby. All Rights Reserved
           </p>
           </div>

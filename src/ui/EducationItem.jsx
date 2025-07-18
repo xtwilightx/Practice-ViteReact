@@ -1,5 +1,5 @@
 export const EducationItem = ({ year, profession, place }) => (
-    <article className="flex gap-8 text-[14px] sm:text-2xl">
+    <article className="flex gap-8 text-[14px] sm:text-2xl sm:mb-[56px]">
       <div className="w-1/4">
         <p className="text-gray-500">{year}</p>
       </div>
